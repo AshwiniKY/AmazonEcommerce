@@ -1,0 +1,13 @@
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="AmazonEcommerce" parallel="tests">
+	<test name="TestN" allow-return-values="true">
+		<classes>
+			<class name="testLayer.OrderModuleTest" />
+			<class name="testLayer.AddressModuleTest" />
+			<class name="testLayer.LoginSecurityModuleTest" />
+			<class name="testLayer.PayementModuleTest" />
+			<class name="testLayer.SearchPaginationTest" />
+			</classes>
+	</test>
+</suite>

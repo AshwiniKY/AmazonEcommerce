@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [AmazonEcommerce]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="TestN(failed)">
+    <classes>
+      <class name="testLayer.LoginSecurityModuleTest">
+        <methods>
+          <include name="initsetup"/>
+          <include name="LoginSecurityModule"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- testLayer.LoginSecurityModuleTest -->
+      <class name="testLayer.SearchPaginationTest">
+        <methods>
+          <include name="PaymentModule"/>
+          <include name="close"/>
+          <include name="initsetup"/>
+        </methods>
+      </class> <!-- testLayer.SearchPaginationTest -->
+      <class name="testLayer.PayementModuleTest">
+        <methods>
+          <include name="initsetup"/>
+          <include name="PaymentModule"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- testLayer.PayementModuleTest -->
+    </classes>
+  </test> <!-- TestN(failed) -->
+</suite> <!-- Failed suite [AmazonEcommerce] -->
